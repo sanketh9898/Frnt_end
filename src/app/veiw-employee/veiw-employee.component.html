@@ -1,0 +1,71 @@
+<h2 style="text-align: center;">Veiw-Details</h2>
+<div class="scrollmenu">
+  <p><a routerLink="/home">Back-Home</a></p>
+  <table  id="excel-table" class="table table-bordered table-striped" >
+  <thead>
+    <tr>
+      
+      <th>Employee Id</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Home-Manager</th>
+      <!-- <th>Location</th>
+      <th>Address</th> -->
+      <!-- <th>Work-Experiance</th>
+      <th>Seat-Id</th>
+      <th>Asset-Id</th>
+      <th>HeadPhones</th>
+      <th>Internet-Details</th>
+      <th>Project-Id</th>
+      <th>Project-Name</th>
+      <th>Agile-Tean</th>
+      <th>Skills</th>
+      <th>Portfolio</th>
+      <th>Senior-Director</th>
+      <th>Liberty-Exp</th>
+      <th>Cognizant-Exp</th>
+      <th>Status</th>
+      <th>Last-Working-Day</th>
+      <th>Liberty-Applications</th>
+      <th>Certification</th> -->
+      <th>More..</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let employee of employees ">
+      
+      <td> {{ employee.empId }} </td>
+      <td> {{ employee.name }} </td>
+      <td> {{ employee.email }} </td>
+      <td> {{ employee.phone }} </td>
+      <td> {{ employee.homeManager }} </td>
+      <!-- <td> {{ employee.location }} </td>
+      <td> {{ employee.address }} </td> -->
+      <!-- <td> {{ employee.workExp }} </td>
+      <td> {{ employee.seatId }} </td>
+      <td> {{ employee.assetId }} </td>
+      <td> {{ employee.headPhone }} </td>
+      <td> {{ employee.internet }} </td>
+      <td> {{ employee.projectId }} </td>
+      <td> {{ employee.projectName }} </td>
+      <td> {{ employee.agileTeam }} </td>
+      <td> {{ employee.skills }} </td>
+      <td> {{ employee.portfolio }} </td>
+      <td> {{ employee.seniorDir }} </td>
+      <td> {{ employee.libertyExp }} </td>
+      <td> {{ employee.cognizantExp }} </td>
+      <td> {{ employee.status}} </td>
+      <td> {{ employee.lastWorkigDay }} </td>
+      <td> {{ employee.libertyApplication }} </td>
+      <td> {{ employee.certification }} </td> -->
+      <td><button (click) = "employeeDetails(employee.empId)" class="btn btn-btn-md "
+        style="background-color: rgb(0, 0, 121); color: rgb(252, 252, 252);margin-top: 20px;">View</button>
+    </td>
+      
+      
+    </tr>
+  </tbody>
+  </table>
+  </div>

@@ -1,0 +1,17 @@
+.quickActionColAppHolder {
+    width: 60%;
+    height: auto;
+    position: relative;
+    overflow: auto;
+    cursor: pointer;
+    float: left;
+    min-height: 100px!important;
+    max-height: 100px!important;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+   font-size: large;
+}
+
+.card:Hover{
+    background-color: rgba(109, 192, 231, 0.24);
+}

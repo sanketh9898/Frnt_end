@@ -1,0 +1,49 @@
+<h2 style="text-align: center;">Skills & Certification</h2>
+<p><a routerLink="/home">Back-Home</a></p>
+  <br>
+<div class="scrollmenu">
+
+  <table  id="excel-table" class="table table-bordered table-striped" >
+  <thead>
+    <tr>
+      
+    
+      <th>Employee Id</th>
+      <th>Name</th>
+      
+      <th>Location</th>
+      
+      <th>Certification</th>
+      <th> Technical Skills</th>
+     
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let employee of employees ">
+      
+      <td> {{ employee.empId }} </td>
+      <td> {{ employee.name }} </td>
+      
+      <td> {{ employee.location }} </td>
+      
+     
+      <td> {{ employee.certification }} </td>
+      <td>{{ employee.skills }}</td>
+      
+      
+    </tr>
+  </tbody>
+  </table>
+  </div>
+  <br>
+<button
+    name="logout"
+    type="button"
+    class="btn btn-btn-md btn-outline-primary"
+    style="background-color: rgb(0, 0, 121); color: rgb(252, 252, 252);margin-left: 10px;"
+    (click)="exportexcel()"
+  >
+    Download
+  </button>
+  <br>

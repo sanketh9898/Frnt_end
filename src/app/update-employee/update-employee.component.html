@@ -1,0 +1,261 @@
+
+<div id="logo" class="text-center" style="color:rgb(8, 8, 78); font-style: normal;">
+  <p>Update Employee Details</p>
+</div>
+<p><a routerLink="/employees">Back-Home</a></p>
+  <div class="container-fluid" style="align-self: center;" >
+    <div class="card ">
+      <div class="card-body">
+        <form  #userPost="ngForm"  (ngSubmit)="onSubmit();"  class="form-control ng-invaild ng-pristine ng-touched">
+          <p class="mb-4"><span class="text-primary font-italic me-1">Personal Details</span></p>
+
+          <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Full Name<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Full Name" name="name" class="text-muted mb-0" [(ngModel)] = "employee.name" required  >
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Email<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Email" name="email" class="text-muted mb-0" [(ngModel)] = "employee.email" required>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Phone<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Phone Number"  class="text-muted mb-0" name="phone" [(ngModel)] = "employee.phone" required>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Employee ID<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Employee ID" class="text-muted mb-0" name="empid" [(ngModel)] = "employee.empId" required>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Home Manager<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Home Manager Name" class="text-muted mb-0" name="HMN" [(ngModel)] = "employee.homeManager" required>
+          </div>                
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Location<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Location" class="text-muted mb-0" name="loc" [(ngModel)] = "employee.location" required>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Address<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Address"  class="text-muted mb-0" name="address" [(ngModel)] = "employee.address" required>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Work Experience<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Work Experience" class="text-muted mb-0" name="exp" [(ngModel)] = "employee.workExp" required>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Liberty Exp<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Liberty Experience"  class="text-muted mb-0" name="lexp" [(ngModel)] = "employee.libertyExp" required>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Seat id<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Seat ID"  class="text-muted mb-0" name="seatid" [(ngModel)] = "employee.seatId" required>
+          </div>
+        </div>
+        <hr>
+        <p class="mb-4"><span class="text-primary font-italic me-1">Asset's/</span>Internet Details</p>
+                
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Asset Id<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Asset Id"  class="text-muted mb-0" name="Assetid"[(ngModel)] = "employee.assetId" required>
+          </div>
+        </div>
+        
+        <hr>
+         <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">HeadPhones<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="radio" placeholder="Yes" value="yes" class="text-muted mb-0" name="headphone" [(ngModel)] = "employee.headPhone">Yes
+            <input type="radio" placeholder="No"  value="no" class="text-muted mb-0" name="headphone" [(ngModel)] = "employee.headPhone">No
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Internet Details<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+              <input type="radio" placeholder="Dongle" value="Dongle" class="text-muted mb-0" name="IDo" [(ngModel)] = "employee.internet">Dongle
+              <input type="radio" placeholder="Peronsal Connection" value="Personal" class="text-muted mb-0" name="IDo" [(ngModel)] = "employee.internet">Personal Connection
+          </div>
+        </div>
+        <hr>
+        <p class="mb-4"><span class="text-primary font-italic me-1">Assigment/</span> Project Details</p>
+            
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Project Id<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Project Id" class="text-muted mb-0" name="Pid" [(ngModel)] = "employee.projectId" required>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">ProjectName<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Project name" class="text-muted mb-0" name="Pnm" [(ngModel)] = "employee.projectName" required>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Senior-Director<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Manager Name" class="text-muted mb-0" name="Mname" [(ngModel)] = "employee.seniorDir" required>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Agile team<span style="color: red;">*</span></p>
+          </div>
+          <div class="col-sm-9">
+            <input type="Text" placeholder="Agile Team" class="text-muted mb-0" name="Ateam" [(ngModel)] = "employee.agileTeam" required>
+          </div>
+      </div>
+          <hr>
+          <p class="mb-4"><span class="text-primary font-italic me-1">Skills</span></p>
+                    
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Primary Skills<span style="color: red;">*</span></p>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="Text" placeholder="JAVA, etc.. " class="text-muted mb-0" name="Pskill" [(ngModel)] = "employee.skills" required>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Certification<span style="color: red;">*</span></p>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="Text" placeholder="certification" class="text-muted mb-0" name="Cert" [(ngModel)] = "employee.certification" required>
+                  </div>
+                </div>
+                <hr>
+                <p class="mb-4"><span class="text-primary font-italic me-1">Additional Information</span></p>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Portfolio<span style="color: red;">*</span></p>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="Text" placeholder="GRS../ GRM.." class="text-muted mb-0" name="potfolio" [(ngModel)] = "employee.portfolio" required>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Status<span style="color: red;">*</span></p>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="Text" placeholder="Billing / Non-Billing" class="text-muted mb-0" name="Db" [(ngModel)] = "employee.status" required>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Last-Working-Day<span style="color: red;">*</span></p>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="Text" placeholder="last working day" class="text-muted mb-0" name="Last" [(ngModel)] = "employee.lastWorkigDay" required>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Cognizant-Experiance<span style="color: red;">*</span></p>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="Text" placeholder="cognizant Experiance" class="text-muted mb-0" name="CogExp" [(ngModel)] = "employee.cognizantExp" required>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Senior-Director<span style="color: red;">*</span></p>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="Text" placeholder="Senior Director" class="text-muted mb-0" name="SnrDir" [(ngModel)] = "employee.seniorDir" required>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Liberty-Applications<span style="color: red;">*</span></p>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="Text" placeholder="Liberty Applications" class="text-muted mb-0" name="LibertyApp" [(ngModel)] = "employee.libertyApplication" required>
+                  </div>
+                </div>
+                <hr>
+                
+                <hr>
+                <div>
+                      <button type="submit" class="btn btn-primary" style="margin:50px;margin-right: 570px;float: right;" [disabled]="!userPost.valid" >Submit</button>
+                  </div>
+            </form>
+          </div>
+          
+      </div>
+      
+  </div>
+
+ 
+  
+ 

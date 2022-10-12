@@ -1,0 +1,47 @@
+export class Employee {
+    name: string;
+    employeeid:string;
+    email: string;
+    phone: string;
+    empId: string;
+    homeManager: string;
+    location: string;
+    address: string;
+    workExp: string;
+    seatId: string;
+    assetId: string;
+    headPhone: string;
+    internet: string;
+    projectId: string;
+    projectName: string;
+    agileTeam: string;
+    skills: string;
+    portfolio: string;
+    seniorDir: string;
+    libertyExp: string;
+    cognizantExp: string;
+    status:string;
+    lastWorkigDay: string;
+    libertyApplication: string;
+    certification: string;
+    protfolio: string;
+    jan:string;
+    feb:string;
+    march:string;
+    april:string;
+    may:string;
+    june:string;
+    july:string;
+    aug:string
+    sept:string;
+    oct:string;
+    nov:string;
+    december:string;
+    week1:string;
+    week2:string;
+    week3:string;
+    week4:string;
+    week5:string;
+    total:string;
+    comments:string;
+}

@@ -1,0 +1,34 @@
+<body>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+ 
+      <form (ngSubmit)="formSubmit()" #loginForm="ngForm">
+        <h2>user Login</h2>
+        <input  [(ngModel)]="loginData.username" name="userName" type="username" placeholder="Username"  type="text"  class="fadeIn second" required minlength='3' pattern="^[a-zA-Z]+$" #name="ngModel" /><span></span>
+        <span *ngIf="name.invalid && name.touched " style="color: red;"class="alert alert-danger">Please enter User Name</span>
+       
+        <input type="password" [(ngModel)]="loginData.password" class="fadeIn third" name="password" placeholder="Password" required #password="ngModel" minlength="3"/>
+        <span *ngIf="password.invalid && password.touched" style="color: red;" class="alert alert-danger">Please enter Password</span>
+        <br>
+        <input type="submit" class="fadeIn fourth" [disabled]="loginForm.invalid" >
+        <br>
+        <div *ngIf="error">
+
+          <div class="alert" role="alert">
+
+            Invalid Credentials !Please try again
+
+          </div>
+
+        </div>
+
+          <div *ngIf="!error">
+
+           
+
+        </div>
+      </form>
+    </div>
+   
+
+ 
